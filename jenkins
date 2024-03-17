@@ -1,0 +1,15 @@
+stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the source code from Git repository
+                https://github.com/gowri9493/CI.git
+            }
+        }
+
+stage('Build') {
+            steps {
+                // Build the Maven project
+                sh 'mvn clean package'
+            }
+        }
+}
