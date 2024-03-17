@@ -1,5 +1,5 @@
     stage('checkout') {
-steps{
+steps {
 
     git branch: 'main', url: 'https://github.com/gowri9493/CI.git'
                      }
@@ -7,7 +7,7 @@ steps{
 
 
  stage('build') {
-steps{
+steps {
 
  sh 'mvn cleanpackage'
  }
