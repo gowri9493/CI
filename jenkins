@@ -1,9 +1,9 @@
 {
- stage('checkout') {
+    stage('checkout') {
     git branch: 'main', url: 'https://github.com/gowri9493/CI.git'
-}
+ }
 
-stage('build') {
-sh 'mvn package'
-}
+ stage('build') {
+ sh 'mvn package'
+ }
 }
